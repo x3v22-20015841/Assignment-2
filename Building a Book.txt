@@ -1,0 +1,15 @@
+What would go into the class of 'Book'?
+ The title of the book;
+ The author name;
+ The edition or version of the book, if explicitly stated;
+ The date of publication for the current version;
+ The original date of publication;
+ The book's ISBN - there is a separate number for each format (Hardback, Paperback, etc);
+ The format of the book;
+ Whether the book is part of a series;
+ If so, what number within the series that book is;
+ The price of the book.
+
+Maybe the overall class is 'Book' but there are subclasses for the formats? (Hardback, Paperback, Graphic Novel, Comic, Audiobook).
+
+A bookstore would have multiple copies of the same book per format, so that they don't sell out after a single purchase, so the overall class would need a count for total copies of a book across formats, and each format would need a count for total copies of a book. Would need some way to differentiate copies of books (which is why sale items have barcodes).
